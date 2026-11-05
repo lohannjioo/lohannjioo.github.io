@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Privacy Policy for wholesale and retail perfume enquiries, including Meta lead forms.">
+  <meta name="color-scheme" content="light">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      --ink: #241b1e;
+      --muted: #6f6266;
+      --paper: #fffdfb;
+      --cream: #f6eee8;
+      --rose: #ad716f;
+      --rose-dark: #7e4a4d;
+      --line: #e7d9d4;
+      --shadow: 0 20px 55px rgba(71, 42, 45, .11);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(190, 135, 130, .13), transparent 25rem),
+        linear-gradient(180deg, #fbf6f2 0, #f8f1ec 25rem, #fffdfb 70rem);
+      font-family: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+      line-height: 1.72;
+    }
+    a { color: var(--rose-dark); text-underline-offset: 3px; }
+    a:hover { color: var(--rose); }
+    button { font: inherit; }
+    .setup-warning {
+      display: none;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      padding: 12px 18px;
+      color: #fff;
+      background: #9f2f35;
+      text-align: center;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .hero {
+      min-height: 365px;
+      display: grid;
+      place-items: center;
+      padding: 54px 24px 80px;
+      text-align: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 330px;
+      height: 330px;
+      border: 1px solid rgba(173, 113, 111, .19);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .hero::before { left: -180px; top: -120px; }
+    .hero::after { right: -190px; bottom: -170px; }
+    .eyebrow {
+      margin: 0 0 18px;
+      color: var(--rose-dark);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 7vw, 78px);
+      font-weight: 500;
+      letter-spacing: -.045em;
+      line-height: 1.02;
+    }
+    .brand {
+      margin: 20px auto 0;
+      color: var(--muted);
+      font-size: clamp(17px, 2.3vw, 22px);
+    }
+    .language-switch {
+      display: inline-flex;
+      gap: 4px;
+      margin-top: 31px;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      box-shadow: 0 8px 28px rgba(71, 42, 45, .07);
+      backdrop-filter: blur(8px);
+    }
+    .language-switch button {
+      border: 0;
+      border-radius: 999px;
+      padding: 9px 18px;
+      color: var(--muted);
+      background: transparent;
+      cursor: pointer;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .language-switch button.active {
+      color: white;
+      background: var(--rose-dark);
+    }
+    main {
+      width: min(920px, calc(100% - 32px));
+      margin: -36px auto 70px;
+      padding: clamp(28px, 5vw, 66px);
+      border: 1px solid rgba(231,217,212,.92);
+      border-radius: 28px;
+      background: rgba(255,253,251,.95);
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .summary {
+      margin: 0 0 45px;
+      padding: 23px 25px;
+      border-left: 3px solid var(--rose);
+      border-radius: 0 14px 14px 0;
+      background: var(--cream);
+      color: #514347;
+      font-size: 17px;
+    }
+    h2 {
+      margin: 48px 0 13px;
+      font-size: clamp(25px, 4vw, 34px);
+      font-weight: 500;
+      letter-spacing: -.025em;
+      line-height: 1.25;
+    }
+    h2:first-of-type { margin-top: 0; }
+    p { margin: 0 0 14px; }
+    ul { margin: 10px 0 18px; padding-left: 23px; }
+    li { margin: 7px 0; padding-left: 4px; }
+    .contact-card {
+      margin-top: 22px;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+    }
+    .contact-card p { margin: 5px 0; }
+    .updated {
+      margin-top: 54px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 13px;
+    }
+    footer {
+      padding: 0 24px 48px;
+      color: var(--muted);
+      text-align: center;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 13px;
+    }
+    [data-lang="zh"] { display: none; }
+    body.zh [data-lang="en"] { display: none; }
+    body.zh [data-lang="zh"] { display: block; }
+    body.zh { font-family: "Songti SC", "Noto Serif CJK SC", Georgia, serif; }
+    @media (max-width: 620px) {
+      .hero { min-height: 320px; padding-top: 43px; }
+      main { margin-top: -34px; border-radius: 20px; }
+      h2 { margin-top: 38px; }
+    }
+    @media print {
+      body { background: white; }
+      .hero { min-height: auto; padding: 25px 0 40px; }
+      .language-switch, .setup-warning { display: none !important; }
+      main { width: 100%; margin: 0; padding: 0; border: 0; box-shadow: none; }
+      footer { padding-top: 40px; }
+    }
+  </style>
+  <script src="config.js"></script>
+</head>
+<body>
+  <div class="setup-warning" id="setupWarning">⚠ 请先修改 config.js 中所有 REPLACE_WITH_ 内容，再发布此页面。</div>
+
+  <header class="hero">
+    <div>
+      <p class="eyebrow">Wholesale · Retail · Fragrance</p>
+      <h1 data-lang="en">Privacy Policy</h1>
+      <h1 data-lang="zh">隐私政策</h1>
+      <p class="brand"><span data-brand-name></span></p>
+      <div class="language-switch" aria-label="Language selector">
+        <button type="button" class="active" data-set-lang="en">English</button>
+        <button type="button" data-set-lang="zh">中文</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article data-lang="en">
+      <p class="summary"><strong>In brief:</strong> We use the business contact information you provide to respond to your perfume wholesale or retail enquiry, prepare quotations, arrange samples, and communicate with you. We do not sell your personal information.</p>
+
+      <h2>1. Who we are</h2>
+      <p>This Privacy Policy explains how <strong data-legal-name></strong>, doing business as <strong data-brand-name></strong> (“we,” “us,” or “our”), collects, uses, stores, and shares personal information from prospective and existing business customers.</p>
+      <p>Our business is based in <span data-country></span>. Our contact details appear in Section 11 below.</p>
+
+      <h2>2. Scope of this policy</h2>
+      <p>This policy applies when you:</p>
+      <ul>
+        <li>submit an Instant Form or lead form on Facebook, Instagram, or another advertising platform;</li>
+        <li>contact us about perfume products, private label services, samples, pricing, distribution, wholesale, or retail opportunities;</li>
+        <li>communicate with us by email, phone, messaging applications, social media, or through our Alibaba.com store; or</li>
+        <li>otherwise interact with us in a business context.</li>
+      </ul>
+
+      <h2>3. Information we collect</h2>
+      <p>Depending on how you interact with us, we may collect:</p>
+      <ul>
+        <li>your name, business email address, telephone number, and country or region;</li>
+        <li>company name, job title, website, business type, sales channels, and market served;</li>
+        <li>product interests, fragrance preferences, estimated order quantity, target price, packaging or customization requirements, and purchasing timeline;</li>
+        <li>the content of your enquiry and our communications with you;</li>
+        <li>information you choose to provide when requesting a quotation, catalogue, or sample; and</li>
+        <li>limited technical or usage information processed by the platform or hosting provider, such as IP address, browser type, and access logs.</li>
+      </ul>
+      <p>Please do not submit sensitive personal information through our enquiry forms.</p>
+
+      <h2>4. How we use information</h2>
+      <p>We may use personal information to:</p>
+      <ul>
+        <li>respond to your enquiry and verify that you are a genuine wholesale or retail prospect;</li>
+        <li>provide catalogues, quotations, samples, product specifications, and customer service;</li>
+        <li>discuss orders, private label projects, distribution, logistics, and commercial terms;</li>
+        <li>follow up about the products or services you requested;</li>
+        <li>send marketing communications where permitted by law and consistent with your choices;</li>
+        <li>maintain business records, prevent fraud or misuse, and protect our legal rights;</li>
+        <li>comply with applicable legal, tax, accounting, and regulatory requirements; and</li>
+        <li>improve our advertising, enquiry handling, products, and services using aggregated or non-identifying information.</li>
+      </ul>
+
+      <h2>5. Legal bases and your choices</h2>
+      <p>Where applicable law requires a legal basis, we rely on your consent, steps requested by you before entering into a contract, performance of a contract, compliance with legal obligations, and our legitimate interests in responding to business enquiries and operating our business.</p>
+      <p>You may ask us to stop marketing communications at any time by using an unsubscribe option, replying “unsubscribe,” or contacting us at the email address below. Stopping marketing does not prevent us from sending messages needed to respond to an active enquiry or perform a contract.</p>
+
+      <h2>6. How we share information</h2>
+      <p>We may share information only as reasonably necessary with:</p>
+      <ul>
+        <li>employees and authorized sales or customer-service personnel who need it to handle your enquiry;</li>
+        <li>service providers supporting email, customer relationship management, cloud hosting, analytics, communications, logistics, payments, fraud prevention, or professional advice;</li>
+        <li>manufacturing, packaging, fulfilment, or shipping partners when needed to prepare or fulfil your request;</li>
+        <li>government authorities or other parties when required by law or necessary to protect rights and safety; and</li>
+        <li>a buyer, successor, or adviser in connection with a merger, financing, restructuring, or sale of all or part of our business.</li>
+      </ul>
+      <p>We do not sell your personal information for money. We do not allow service providers to use it for their own unrelated purposes.</p>
+
+      <h2>7. Meta, Alibaba.com, and other platforms</h2>
+      <p>If you submit a form on Facebook or Instagram, Meta may process information under its own terms and privacy policy before making the lead available to us. If you visit or contact us through Alibaba.com or another third-party platform, that platform separately processes information according to its own policies. We encourage you to review the privacy settings and notices provided by those platforms.</p>
+      <p data-alibaba-row>Our Alibaba.com store is available at <a data-alibaba-link rel="noopener noreferrer" target="_blank"><span data-alibaba-url></span></a>.</p>
+
+      <h2>8. International transfers and security</h2>
+      <p>Because we work with international buyers and service providers, your information may be processed in countries other than your own. Where required, we use reasonable contractual, organizational, and technical safeguards for cross-border transfers.</p>
+      <p>We take reasonable measures designed to protect information against loss, misuse, unauthorized access, disclosure, alteration, or destruction. However, no internet transmission or storage system is completely secure.</p>
+
+      <h2>9. Retention</h2>
+      <p>We generally retain lead and enquiry information for up to <span data-retention></span> months after our last meaningful interaction, unless a longer period is reasonably necessary for an active business relationship, dispute, legal obligation, or recordkeeping requirement. We then delete or anonymize the information where reasonably practicable.</p>
+
+      <h2>10. Your privacy rights</h2>
+      <p>Depending on where you live, you may have rights to request access to, correction of, deletion of, restriction of, or a copy of your personal information, to object to certain processing, or to withdraw consent. You may also have the right to complain to your local data protection authority.</p>
+      <p>To make a request, contact us using the details below. We may need to verify your identity and may retain a record of your request. Certain rights are subject to legal limitations and exemptions. We will not discriminate against you for exercising applicable privacy rights.</p>
+
+      <h2>11. Contact us</h2>
+      <p>If you have a question, privacy request, or complaint, contact:</p>
+      <div class="contact-card">
+        <p><strong data-legal-name></strong></p>
+        <p><span data-address></span></p>
+        <p>Email: <a data-email-link><span data-email></span></a></p>
+      </div>
+
+      <h2>12. Children and policy updates</h2>
+      <p>Our products and business enquiry services are intended for adults and business representatives. We do not knowingly collect personal information from children.</p>
+      <p>We may update this policy to reflect changes in our practices or legal requirements. The revised policy will be posted on this page with a new effective date.</p>
+      <p class="updated">Effective date: <span data-effective-date></span></p>
+    </article>
+
+    <article data-lang="zh">
+      <p class="summary"><strong>简要说明：</strong>我们仅将您提供的商务联系方式用于回复香水批发或零售询盘、提供报价、安排样品及与您沟通。我们不会出售您的个人信息。</p>
+
+      <h2>1. 关于我们</h2>
+      <p>本隐私政策说明 <strong data-legal-name></strong>（品牌名称：<strong data-brand-name></strong>，以下简称“我们”）如何收集、使用、保存和共享潜在客户及现有商业客户的个人信息。</p>
+      <p>我们的业务所在地为<span data-country></span>。联系方式见下文第 11 条。</p>
+
+      <h2>2. 适用范围</h2>
+      <p>当您进行以下活动时，本政策适用：</p>
+      <ul>
+        <li>在 Facebook、Instagram 或其他广告平台提交即时表单或潜在客户表单；</li>
+        <li>就香水产品、贴牌服务、样品、报价、经销、批发或零售合作联系我们；</li>
+        <li>通过电子邮件、电话、即时通讯、社交媒体或我们的阿里巴巴国际站店铺与我们沟通；</li>
+        <li>以其他商务方式与我们互动。</li>
+      </ul>
+
+      <h2>3. 我们收集的信息</h2>
+      <p>根据您与我们互动的方式，我们可能收集：</p>
+      <ul>
+        <li>姓名、商务邮箱、电话号码以及国家或地区；</li>
+        <li>公司名称、职位、网站、业务类型、销售渠道及目标市场；</li>
+        <li>产品兴趣、香型偏好、预计订购数量、目标价格、包装或定制要求及采购时间；</li>
+        <li>询盘内容以及双方的沟通记录；</li>
+        <li>您在索取报价、目录或样品时主动提供的信息；</li>
+        <li>平台或网站托管服务商处理的有限技术信息，例如 IP 地址、浏览器类型及访问日志。</li>
+      </ul>
+      <p>请勿通过我们的询盘表单提交敏感个人信息。</p>
+
+      <h2>4. 信息的使用方式</h2>
+      <p>我们可能将个人信息用于：</p>
+      <ul>
+        <li>回复询盘并确认真实的批发或零售合作需求；</li>
+        <li>提供产品目录、报价、样品、规格和客户服务；</li>
+        <li>讨论订单、贴牌项目、经销、物流和商务条款；</li>
+        <li>跟进您所询问的产品或服务；</li>
+        <li>在法律允许且符合您选择的情况下发送营销信息；</li>
+        <li>保存业务记录、防止欺诈或滥用并保护合法权益；</li>
+        <li>履行适用的法律、税务、会计和监管义务；</li>
+        <li>使用汇总或无法识别个人身份的信息改进广告、询盘处理、产品和服务。</li>
+      </ul>
+
+      <h2>5. 处理依据与您的选择</h2>
+      <p>在适用法律要求说明处理依据时，我们可能依据您的同意、应您要求在签订合同前采取的措施、履行合同、遵守法律义务，以及回复商务询盘和经营业务的正当利益处理信息。</p>
+      <p>您可以随时通过退订功能、回复“退订”或发送邮件要求停止营销联系。停止营销联系不会影响我们为回复正在处理的询盘或履行合同而发送必要信息。</p>
+
+      <h2>6. 信息共享</h2>
+      <p>我们仅在合理必要的范围内向以下对象共享信息：</p>
+      <ul>
+        <li>为处理询盘而确有需要的员工及获授权的销售或客服人员；</li>
+        <li>提供电子邮件、客户关系管理、云托管、分析、通讯、物流、付款、反欺诈或专业顾问服务的供应商；</li>
+        <li>为准备或履行您的需求所必需的生产、包装、履约或运输合作方；</li>
+        <li>法律要求或为保护权利与安全而需要披露时的政府机关或其他相关方；</li>
+        <li>在合并、融资、重组或出售全部或部分业务时的买方、继承人或顾问。</li>
+      </ul>
+      <p>我们不会以获取金钱为目的出售您的个人信息，也不允许服务商将这些信息用于其自身无关的目的。</p>
+
+      <h2>7. Meta、阿里巴巴国际站及其他平台</h2>
+      <p>如果您在 Facebook 或 Instagram 提交表单，Meta 可能先依据其自身条款和隐私政策处理信息，再将线索提供给我们。如果您通过阿里巴巴国际站或其他第三方平台访问或联系我们，该平台也会按照其自身政策独立处理信息。建议您阅读相关平台提供的隐私设置与通知。</p>
+      <p data-alibaba-row>我们的阿里巴巴国际站店铺：<a data-alibaba-link rel="noopener noreferrer" target="_blank"><span data-alibaba-url></span></a>。</p>
+
+      <h2>8. 跨境传输与安全</h2>
+      <p>由于我们与国际买家及服务商合作，您的信息可能在您所在国家或地区以外被处理。在法律要求的情况下，我们会采用合理的合同、组织及技术保障措施处理跨境传输。</p>
+      <p>我们采取合理措施，防止信息丢失、滥用、未经授权访问、披露、篡改或毁损。但任何互联网传输或存储系统均无法保证绝对安全。</p>
+
+      <h2>9. 保存期限</h2>
+      <p>一般情况下，我们会在最后一次有实际意义的互动后，将线索及询盘信息保存不超过 <span data-retention></span> 个月。如果存在持续的业务关系、争议、法律义务或记录保存要求，我们可能合理延长保存期限。之后，我们会在合理可行的范围内删除或匿名化相关信息。</p>
+
+      <h2>10. 您的隐私权利</h2>
+      <p>根据您所在地区的法律，您可能有权请求访问、更正、删除、限制处理或获取个人信息副本，也可能有权反对特定处理或撤回同意。您还可能有权向当地数据保护监管机构投诉。</p>
+      <p>如需提出请求，请通过下方方式联系我们。我们可能需要验证您的身份并保留请求记录。相关权利可能受到法律限制和例外条款约束。我们不会因您行使适用的隐私权利而歧视您。</p>
+
+      <h2>11. 联系我们</h2>
+      <p>如有问题、隐私请求或投诉，请联系：</p>
+      <div class="contact-card">
+        <p><strong data-legal-name></strong></p>
+        <p><span data-address></span></p>
+        <p>邮箱：<a data-email-link><span data-email></span></a></p>
+      </div>
+
+      <h2>12. 未成年人及政策更新</h2>
+      <p>我们的产品和商务询盘服务面向成年人及企业代表。我们不会故意收集未成年人的个人信息。</p>
+      <p>我们可能根据业务实践或法律要求的变化更新本政策。修订后的政策将发布在本页面，并注明新的生效日期。</p>
+      <p class="updated">生效日期：<span data-effective-date-zh></span></p>
+    </article>
+  </main>
+
+  <footer>© <span id="year"></span> <span data-legal-name></span>. All rights reserved.</footer>
+
+  <script>
+    (function () {
+      const c = window.PRIVACY_POLICY_CONFIG || {};
+      const fields = {
+        "[data-legal-name]": c.legalName,
+        "[data-brand-name]": c.brandName || c.legalName,
+        "[data-email]": c.contactEmail,
+        "[data-address]": c.businessAddress,
+        "[data-country]": c.countryOrRegion,
+        "[data-alibaba-url]": c.alibabaStoreUrl,
+        "[data-retention]": c.retentionMonths,
+        "[data-effective-date]": c.effectiveDate,
+        "[data-effective-date-zh]": c.effectiveDateZh
+      };
+      Object.entries(fields).forEach(([selector, value]) => {
+        document.querySelectorAll(selector).forEach(el => { el.textContent = value || ""; });
+      });
+      document.querySelectorAll("[data-email-link]").forEach(el => {
+        el.href = "mailto:" + (c.contactEmail || "");
+      });
+      document.querySelectorAll("[data-alibaba-link]").forEach(el => {
+        el.href = c.alibabaStoreUrl || "#";
+      });
+      if (!c.alibabaStoreUrl) {
+        document.querySelectorAll("[data-alibaba-row]").forEach(el => { el.style.display = "none"; });
+      }
+      document.title = "Privacy Policy | " + (c.brandName || c.legalName || "Business");
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const hasPlaceholder = Object.values(c).some(v => String(v).includes("REPLACE_WITH_"));
+      if (hasPlaceholder) document.getElementById("setupWarning").style.display = "block";
+
+      document.querySelectorAll("[data-set-lang]").forEach(button => {
+        button.addEventListener("click", () => {
+          const lang = button.dataset.setLang;
+          document.body.classList.toggle("zh", lang === "zh");
+          document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
+          document.querySelectorAll("[data-set-lang]").forEach(b => b.classList.toggle("active", b === button));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
